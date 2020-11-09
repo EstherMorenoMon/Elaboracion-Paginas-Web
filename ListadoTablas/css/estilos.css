@@ -62,7 +62,7 @@ h3 + ul > li {
 
 
 
-/* Bordes de las TABLAS */
+/* Bordes,margen y relleno de las TABLAS */
 /* Colapsado:*/
 table {
    border-collapse: collapse;
@@ -70,10 +70,18 @@ table {
 
 td, th {
     border: 1px solid black;
+    padding: 2%;
 }
 /* Sin colapsar */
+/*
 table, td, th {
     border: 1px solid black;
+    padding: 2%;
+    margin: auto;
 }
-
+*/
+/* Alinear al centro el pie de la tabla */
+tfoot {
+    text-align: center;
+}
 
