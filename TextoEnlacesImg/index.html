@@ -1,116 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Texto, Enlaces e Imágenes </title>
-    <meta name="author" content ="Esther Moreno" />
-</head>
-<body>
-    
-</body>
-<title>Página para probar textos</title>
-<link rel="stylesheet" href="css/estilos.css" />
-</head>
-<body>
-<header>
-    <h1>Ejemplo de Textos, Enlace e Imágenes</h1>
-</header>
-<nav>
-      <a href="index.html">Home. En el mismo sitio</a> 
-    | <a href="foro.html">Foro</a>  <!-- este falla porque no está en la carpeta-->
-    | <a href="http://www.google.com">Google</a> <!--Ruta absoluta por Internet. URL-->
-    | <a href="#codigo">Ir a Código</a> <!--Ancla en la propia página-->
-    | <a href="D:\AW\UT4\Textos\index.html"> Ir a index </a> <!--No usar: ruta absoluta-->
-    | <a href="../ejemplo1/index_completa.html"> Ir a index. Ruta relativa</a>
-</nav>
-<main>
-    <section>
-        <article>
-            <pre>
-                La <strong>muerte</strong> es una <i>quimera</i>: porque mientras yo <u>existo</u>, no <u>existe</u> la <strong>muerte</strong>;
-                y cuando <u>existe</u> la <strong>muerte</strong>, ya no <u>existo</u> yo.
-                <b><em>Epicuro de Samos </em></b>
-            </pre>
-        </article>
-        <article>
-            <p>
-                La <strong>muerte</strong> es una <i>quimera</i>: porque mientras yo existo, no existe la <strong>muerte</strong>; <br />
-                y cuando existe la <strong>muerte</strong>, ya no existo yo. <br />
-                <b><em>Epicuro de Samos </em></b>
-            </p>
-        </article>
-        <article>
-            <p>
-                La <mark>muerte</mark> es una quimera: porque mientras yo existo, no existe la <mark>muerte</mark>; <br />
-                y cuando existe la <mark>muerte</mark>, ya no existo yo. <br />
-                <cite>Epicuro de Samos </cite>
-            </p>
-        </article>
-    </section>
-    <section>
-        <article>
-            <pre>
-                <code id="codigo">
-                    function cambiarColor() {                   R   G  B
-                        document.body.style.backgroundColor = "#00 00 FF"; 
-                        }
-                    document.addEventListener("click", cambiarColor);
-                </code>
-            </pre>
-        </article> 
-        <article>
-            Para volver a ver el código pinchar <a href="#codigo">aquí</a>
-        </article>  
-        <article> Número <sub>subíndice</sub> <sup>superíndice</sup></article>         
-    </section>
-    <section>
-        <article>
-            <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
-ping="http://www.formasterminds.com/control.php" target="_top">Clic aquí para
-descargar</a>
-        <a href="img/favicon.ico" download> Bajar imagen</a>
-        </article>
-    </section>
-    <section>
-        <h3>Imagen</h3>
-        <img class="imagen" src="img/arroz.jpg"  alt="Imagen de arroz" width="20" height="100"/>
-    </section>
-    <section>
-    <article>
-        <p>La muerte es una quimera: porque mientras yo existo, no existe la muerte;<br>y
-        cuando existe la muerte, ya no existo yo.<br>Epicuro de Samos</p>
-        <figure>
-        <img src="img/arroz.jpg" width="150" alt="Arroz">
-        <figcaption>Mi foto favorita<figcaption>
-        </figure>
-        </article>
-    </section>    
-    <section>
-        <article>
-        <img id="alegria" src="img/Alegría.jpg" />
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto illo quae tempore, veritatis unde voluptates autem at reprehenderit commodi ex deleniti assumenda iste harum in id iure corporis pariatur dignissimos.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, officiis. Magni numquam blanditiis, eveniet eos perferendis ullam ea placeat neque aliquid dolore voluptates distinctio consectetur harum eligendi hic, enim dignissimos.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni debitis accusantium, illo pariatur deleniti, laboriosam voluptatibus dolore eius voluptate, et adipisci fugit! Rerum mollitia sed maiores dolor, enim suscipit praesentium.</p>
-        </article>
-    </section>
-    <section>
-        <article>
-            <h3>Abreviaturas</h3>
-            <p> <dfn><abbr title="Tecnologías de la Información y Comunicaciones">TIC</abbr></dfn> es la ciencia que estudia...</p>
-            <p><dfn><abbr title="Cascading Style Sheets">CSS</abbr>
-            </dfn> is a language that describes the style of an HTML document.</p>
-        </article>
-    </section>
-</main>
-<footer>
-    <small>&copy; Propiedad de Esther</small>
-    <a href="https://www.educa2.madrid.org/web/centro.ies.luisbraille.coslada">
-        <address>IES Luis Braille </address>
-    </a>
-    <a href="mailto:esther.moreno@luisbraille.es">Contacto</a>
-    <time datetime="2020-11-03" pubdate>publicado 03-11-2020</time>
-</footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo Texto, Enlaces e Imágenes </title>
+        <meta name="author" content ="Esther Moreno" />
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Ejemplo de Textos, Enlace e Imágenes</h1>
+            <time datetime="2020-11-03" pubdate>Publicado 03 de Noviembre del 2020</time>
+        </header>
+        
+        <nav>
+            <a href="index1.html"> Ubicado en el mismo sitio</a> 
+            | <a href="foro.html">Foro</a>  <!-- este falla porque no está en la carpeta-->
+            | <a href="http://www.google.com">Google</a> <!--Ruta absoluta por Internet. URL-->
+            | <a href="#codigo">Ir a Código</a> <!--Ancla en la propia página-->
+            | <a href="D:\AW\UT4\Textos\index.html"> Ir a index </a> <!--No usar: ruta absoluta-->
+            | <a href="../ejemplo1/index_completa.html"> Ir a index. Ruta relativa</a>
+        </nav>
+        
+        <main>
+            <section>
+                <h2>Etiquetas y estilos de Textos</h2>
+                <article>
+                    <pre>
+                        La <strong>muerte</strong> es una <i>quimera</i>: porque mientras yo <u>existo</u>, no <u>existe</u> la <strong>muerte</strong>;
+                        y cuando <u>existe</u> la <strong>muerte</strong>, ya no <u>existo</u> yo.
+                        <cite><b><em>Epicuro de Samos </em></b></cite>
+                    </pre>
+                </article>
+                <article>
+                    <p>
+                        La <strong>muerte</strong> es una <i>quimera</i>: porque mientras yo existo, no existe la <strong>muerte</strong>; <br />
+                        y cuando existe la <strong>muerte</strong>, ya no existo yo. <br />
+                        <cite><b><em>Epicuro de Samos </em></b></cite>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        La <mark>muerte</mark> es una quimera: porque mientras yo existo, no existe la <mark>muerte</mark>; <br />
+                        y cuando existe la <mark>muerte</mark>, ya no existo yo. <br />
+                        <cite>Epicuro de Samos </cite>
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <pre>
+                        <code id="codigo">
+                            function cambiarColor() {                   R   G  B
+                                document.body.style.backgroundColor = "#00 00 FF"; 
+                                }
+                            document.addEventListener("click", cambiarColor);
+                        </code>
+                    </pre>
+                </article> 
+            </section>
+            <section>
+                <article> 
+                    <h2>Subíndice y superíndice </h2>
+                    <p>Elemento <sub>subíndice</sub> <sup>superíndice</sup> </p>
+                </article> 
+                <article>
+                    <h2>Abreviaturas</h2>
+                    <p> 
+                        <dfn> 
+                            <abbr title="Tecnologías de la Información y Comunicaciones">TIC</abbr>
+                        </dfn>: término extensivo para la tecnología de la información (TI) que enfatiza el papel de las comunicaciones unificadas y la integración de las telecomunicaciones y las computadoras, así como el software necesario, el middleware, almacenamiento y sistemas audiovisuales, que permiten a los usuarios acceder, almacenar, transmitir y manipular información.
+                    </p>
+                    <p> 
+                        <dfn> 
+                            <abbr title="Cascading Style Sheets">CSS</abbr>
+                        </dfn> es un lenguaje que describe el estilo de un documento HTML.
+                    </p>
+                </article>
+             </section>                   
+            <section>
+                <h2>Contenido para Enlaces</h2>
+                <article>
+                    Para volver a ver el código pinchar <a href="#codigo">aquí</a>
+                </article>
+                <article>
+                    <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+                    ping="http://www.formasterminds.com/control.php" target="_blank">Clic aquí para abrir en otra pestaña</a>
+                    <br />
+                    <a href="img/favicon.ico" download> Bajar imagen</a>
+                </article>
+            </section>
 
-</body>
+            <section>
+                <article>
+                    <h2>Imagen</h2>
+                    <img class="imagen" src="img/arroz.jpg"  alt="Imagen de arroz" width="200" height="150"/>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <figure>
+                        <img class="imagen" src="img/arroz.jpg" width="100" height="150" alt="Arroz">
+                        <figcaption>Mi comida favorita<figcaption>
+                    </figure>
+                </article>
+            </section>    
+            <section>
+                <article>
+                    <img id="alegria" src="img/alegría.jpg" />
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto illo quae tempore, veritatis unde voluptates autem at reprehenderit commodi ex deleniti assumenda iste harum in id iure corporis pariatur dignissimos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, officiis. Magni numquam blanditiis, eveniet eos perferendis ullam ea placeat neque aliquid dolore voluptates distinctio consectetur harum eligendi hic, enim dignissimos.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni debitis accusantium, illo pariatur deleniti, laboriosam voluptatibus dolore eius voluptate, et adipisci fugit! Rerum mollitia sed maiores dolor, enim suscipit praesentium.</p>
+                </article>
+            </section>
+            
+        </main>
+
+        <footer>
+            <small>&copy; Propiedad de Esther</small>
+            <a href="https://www.educa2.madrid.org/web/centro.ies.luisbraille.coslada">
+                <address>IES Luis Braille </address>
+            </a>
+            <a href="mailto:esther.moreno@luisbraille.es">Contacto</a>  
+        </footer>
+    </body>
 </html>

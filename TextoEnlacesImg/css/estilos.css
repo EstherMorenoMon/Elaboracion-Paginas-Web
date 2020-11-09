@@ -1,3 +1,16 @@
+/* Texto justificado
+body {
+    text-align: justify;
+}
+*/
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
 strong {
     color:red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,30 +19,22 @@ em {
     color:green;
 }
 
-footer {
-    text-align: right;
+cite {
+    color: greenyellow;
 }
-/* Texto justificado
-body {
-    text-align: justify;
-}
-*/
+
 #codigo {
     color:pink;
 }
-
- 
-nav {
-    display: flex;
-    flex-direction: row; /* row-reverse, col */
-  }
+/* Para centrar las clases "imagen"
 .imagen {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+*/
 
 #alegria {
-    float: left; /*None*/
+    float: left; /* o none, right...*/
 }
