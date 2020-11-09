@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplos de Listados y Tablas</title>
+    <meta name="author" content ="Esther Moreno" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
@@ -12,7 +13,11 @@
         <h1>Ejemplos de uso de listados y tablas</h1>
     </header>
     <nav>
-
+        <ul>
+            <li><a href="pag/listasanidadas.html">Listas Anidadas</a></li>
+            <li><a href="pag/tbasica.html">Tabla Básica</a></li>
+            <li><a href="pag/horario.html">Horario</a></li>
+        </ul>
     </nav>
     <main>
         <section>
@@ -34,11 +39,11 @@
                     <li>El Resplandor, Stephen King</li>
                     <li>Misery, Stephen King</li>
                 </ol>
-                < type="a" reversed>
-                    <li>IT, Stephen King</li>
-                    <li>Carrie, Stephen King</li>
-                    <li>El Resplandor, Stephen King</li>
-                    <li>Misery, Stephen King</li>
+                <ol type="a" reversed>
+                    <li class="obra">IT, Stephen King</li>
+                    <li class="obra">Carrie, Stephen King</li>
+                    <li class="obra">El Resplandor, Stephen King</li>
+                    <li class="obra">Misery, Stephen King</li>
                 </ol>    
                 <ol type="1" start="3">
                     <li>IT, Stephen King</li>
@@ -86,7 +91,21 @@
                     <p>Misery</p>
                 </details>               
             </article>
+            <article>
+                <h3>Atributos globales: translate y contenteditable</h3>
+                <p>Mi película favorita es <span translate="no">Inside Out</span></p>
+                <p>Mi película favorita es <span contenteditable>Inside Out</span></p>
+            </article>
         </section>
     </main>
+    
+    <footer>
+        <br />
+        <small>&copy; Propiedad de Esther</small>
+        <a href="https://www.educa2.madrid.org/web/centro.ies.luisbraille.coslada">
+            <address>IES Luis Braille </address>
+        </a>
+        <a href="mailto:esther.moreno@luisbraille.es">Contacto</a>  
+    </footer>
 </body>
 </html>
